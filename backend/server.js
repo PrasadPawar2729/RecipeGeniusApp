@@ -1,15 +1,19 @@
 const express = require("express")
 const { connectToDB } = require("./config/db")
 const cors=require("cors")
+const { authRouter } = require("./routes/userRouter")
+
 const app = express()
 require("dotenv").config()
 
 
 app.use(cors())
 app.use(express.json())
-app.get("/user", (req, res) => {
-  res.send("this is user route")
-})
+
+
+app.use("/user",authRouter)
+
+
 
 
 

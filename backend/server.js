@@ -7,8 +7,8 @@ require("dotenv").config()
 
 app.use(cors())
 app.use(express.json())
-app.get("/", (req, res) => {
-  res.send("Hello World")
+app.get("/user", (req, res) => {
+  res.send("this is user route")
 })
 
 

@@ -1,7 +1,11 @@
 const express = require("express")
 const { connectToDB } = require("./config/db")
+
 const cors=require("cors")
-const { authRouter } = require("./routes/userRouter")
+const { authRouter } = require("./routes/user.Routes")
+const RecipeRouter = require("./routes/recipe.Routes")
+
+
 
 const app = express()
 require("dotenv").config()
@@ -12,6 +16,8 @@ app.use(express.json())
 
 
 app.use("/user",authRouter)
+
+app.use("/recipes",RecipeRouter)
 
 
 

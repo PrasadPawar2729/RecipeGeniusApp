@@ -9,10 +9,9 @@ function App() {
   return (
     <>
       <ChakraProvider>
-      < Heading/>
-      <Footer/>
-   
-      </ ChakraProvider>
+        < Heading />
+        <Footer />
+      </ChakraProvider>
     </>
   )
 }

@@ -5,12 +5,14 @@ import Heading from './components/Heading.jsx';
 import Footer from './components/Footer.jsx';
 import AboutUs from './components/AboutUs.jsx';
 import ContactUs from './components/ContactUs.jsx';
+import { Midsection } from './components/Midsection.jsx';
 
 function App() {
   return (
     <ChakraProvider>
       <Router>
-        <Heading />
+        {/* <Heading /> */}
+        <Midsection/>
         <Routes>
           <Route path="/" element={<Footer />} />
           <Route path="/about-us" element={<AboutUs />} />

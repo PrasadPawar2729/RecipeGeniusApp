@@ -1,4 +1,4 @@
-// src/components/ContactUs.js
+
 import { Box, Heading, VStack, FormControl, FormLabel, Input, Textarea, Button } from '@chakra-ui/react';
 
 const ContactUs = () => {

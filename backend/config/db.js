@@ -12,19 +12,10 @@
 
 
 const mongoose = require("mongoose");
-require("dotenv").config();
 
-const connectToDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGO_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 30000, 
-    });
-    console.log("Connected to MongoDB successfully");
-  } catch (error) {
-    console.error("Error connecting to MongoDB:", error);
-  }
+const connectToDB = async (url) => {
+  await mongoose.connect(url);
+  console.log("connect to mongoo")
 };
 
-module.exports = {connectToDB};
+module.exports = connectToDB;

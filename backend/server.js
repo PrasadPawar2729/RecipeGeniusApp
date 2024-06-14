@@ -1,10 +1,11 @@
 const express = require("express")
-const { connectToDB } = require("./config/db")
+
 
 const cors=require("cors")
 const { authRouter } = require("./routes/user.Routes")
 
 const RecipeRouter = require("./routes/recipe.Routes")
+const connectToDB = require("./config/db")
 
 
 
@@ -29,8 +30,8 @@ app.use("/recipes",RecipeRouter)
 //server 
 app.listen(process.env.PORT, async() => {
   try{
-   await connectToDB
-   console.log("db is connected")
+    
+    connectToDB(process.env.MONGO_URL)
     console.log(`Server is running on port ${process.env.PORT}`)
   }
   catch(err){

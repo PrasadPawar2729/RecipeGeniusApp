@@ -1,3 +1,11 @@
+
+
+import './App.css'
+import { AllRouter } from './Routes/AllRouter'
+// import { ChakraProvider } from '@chakra-ui/react'
+// import Heading from './components/Heading.jsx'
+// import Footer from './components/Footer.jsx'
+
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -6,9 +14,16 @@ import AboutUs from './components/AboutUs.jsx';
 import ContactUs from './components/ContactUs.jsx';
 import Banner from './components/Banner.jsx';
 
+
 function App() {
 
   return (
+    <>
+     <AllRouter/>
+     
+    </>
+  )
+
     <ChakraProvider>
       <Router>
         <Banner/>
@@ -20,6 +35,7 @@ function App() {
       </Router>
     </ChakraProvider>
   );
+
 }
 
 export default App;

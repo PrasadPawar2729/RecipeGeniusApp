@@ -5,6 +5,7 @@ import Footer from './components/Footer.jsx';
 import AboutUs from './components/AboutUs.jsx';
 import ContactUs from './components/ContactUs.jsx';
 import Banner from './components/Banner.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

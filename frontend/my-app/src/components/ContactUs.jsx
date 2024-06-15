@@ -1,10 +1,11 @@
 
 import { Box, Heading, VStack, FormControl, FormLabel, Input, Textarea, Button } from '@chakra-ui/react';
+import Footer from './Footer';
 
 const ContactUs = () => {
   return (
-    <Box p={5}>
-      <VStack spacing={5}>
+    <Box p={5} >
+      <VStack spacing={5} >
         <Heading as="h1" size="xl">Contact Us</Heading>
         <FormControl id="name">
           <FormLabel>Name</FormLabel>
@@ -20,6 +21,7 @@ const ContactUs = () => {
         </FormControl>
         <Button colorScheme="teal" type="submit">Submit</Button>
       </VStack>
+      <Footer/>
     </Box>
   );
 };

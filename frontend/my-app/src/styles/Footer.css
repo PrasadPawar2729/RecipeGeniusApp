@@ -1,0 +1,15 @@
+#Recpie-Footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.footerSection{
+    color: black;
+}
+.footerContent{
+}

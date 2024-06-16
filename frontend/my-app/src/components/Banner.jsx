@@ -24,7 +24,7 @@ const Banner = () => {
       <Image
         src={images[currentImageIndex]}
         alt={`Image ${currentImageIndex + 1}`}
-        w='100%'
+        w='1200px'
         maxH='350px'
         objectFit='cover'
       />
@@ -35,7 +35,7 @@ const Banner = () => {
         transform='translate(-50%, -50%)'
         textAlign='center'
         color='white'
-        fontSize='4.2vw' 
+        fontSize='4.2vw'
         fontWeight='bold'
         textShadow='2px 2px 8px rgba(0, 0, 0, 0.5), 4px 4px 6px rgba(0, 0, 0, 0.3)'
         w='80%'

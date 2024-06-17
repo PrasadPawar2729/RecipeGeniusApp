@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer.jsx';
 import AboutUs from './components/AboutUs.jsx';
 import ContactUs from './components/ContactUs.jsx';
-import Banner from './components/Banner.jsx';
 
 
 function App() {

@@ -1,0 +1,35 @@
+
+#tabs {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  #tabpan {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tabsect {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .tabsect {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  
+    .tabsect > * {
+      margin-bottom: 20px; /* Adjust spacing between cards */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tabsect {
+      margin-top: 10px;
+    }
+  }
+  

@@ -90,7 +90,8 @@ Creator Role: Creators have additional privileges to create, update, and delete 
 API Endpoints
 GET /posts - retrieve all items
 POST /posts - create a new item
-PATCH /posts/:id - Patch an item
+PATCH /posts/:i[Uploading README.md…]()
+d - Patch an item
 DELETE /posts/:id - Delete an item
 POST /login - login in a user
 POST /register - create a user account

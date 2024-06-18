@@ -1,5 +1,6 @@
-CookBook
-Introduction
+
+## Introduction
+
 RecipeGenius is an innovative recipe recommendation application designed to inspire users with culinary ideas based on their preferences, dietary restrictions, and ingredients at hand. Drawing inspiration from Yummly, RecipeGenius aims to simplify meal planning and discovery, providing a personalized experience for each user. The application will feature a vast database of recipes, a user-friendly interface for searching and filtering recipes, and personalized recommendations to cater to the unique tastes and dietary needs of its users.
 
 Deplolyed App
@@ -7,66 +8,53 @@ Frontend:  https://recipe-genius-app-4quw.vercel.app/
 Backend: https://recipegeniusapp.onrender.com/
 
 Directory Structure
-CookBook
-backend/
-│
-├── config/
-│ └── db.js
-│
-├── controllers/
-│ ├── recipeController.js
-│ └── userController.js
-│
-├── middleware/
-│ ├── access.js
-│ └── auth.js
-│
-├── models/
-│ ├── Recipemodel.js
-│ └── Usermodel.js
-│
-├── routes/
-│ ├── recipeRoutes.js
-│ └── userRoutes.js
-│
-├── index.js
-├── .gitignore
-└── package.json
-frontend/
-│
-├── Logo/
-│ └── mealmkr.jpg
-│
-├── src/
-│ ├── Components/
-│ │ ├── Footer.jsx
-│ │ ├── Heading.jsx
-│ │ ├── Navbar.jsx
-│ │ └── RecipeData.jsx
-│ │
-│ ├── Pages/
-│ │ ├── Account.jsx
-│ │ ├── Home.jsx
-│ │ ├── Login.jsx
-│ │ └── Recipe.jsx
-│ │
-│ ├── Routes/
-│ │ └── AllRoutes.jsx
-│ │
-│ ├── Styles/
-│ │ ├── Footer.css
-│ │ └── LoginPage.css
-│ │
-│ ├── App.css
-│ ├── App.jsx
-│ ├── index.css
-│ ├── index.html
-│ ├── main.jsx
-│ ├── .eslintrc.cjs
+RecipeGenius
+├── backend/
+│ ├── config/
+│ │ └── db.js
+│ ├── controllers/
+│ │ ├── recipeController.js
+│ │ └── userController.js
+│ ├── middleware/
+│ │ ├── access.js
+│ │ └── auth.js
+│ ├── models/
+│ │ ├── Recipemodel.js
+│ │ └── Usermodel.js
+│ ├── routes/
+│ │ ├── recipeRoutes.js
+│ │ └── userRoutes.js
+│ ├── index.js
 │ ├── .gitignore
-│ ├── package.json
-│ └── README.md
-│
+│ └── package.json
+├── frontend/
+│ ├── Logo/
+│ │ └── mealmkr.jpg
+│ ├── src/
+│ │ ├── Components/
+│ │ │ ├── Footer.jsx
+│ │ │ ├── Heading.jsx
+│ │ │ ├── Navbar.jsx
+│ │ │ └── RecipeData.jsx
+│ │ ├── Pages/
+│ │ │ ├── Account.jsx
+│ │ │ ├── Home.jsx
+│ │ │ ├── Login.jsx
+│ │ │ └── Recipe.jsx
+│ │ ├── Routes/
+│ │ │ └── AllRoutes.jsx
+│ │ ├── Styles/
+│ │ │ ├── Footer.css
+│ │ │ └── LoginPage.css
+│ │ ├── App.css
+│ │ ├── App.jsx
+│ │ ├── index.css
+│ │ ├── index.html
+│ │ ├── main.jsx
+│ │ ├── .eslintrc.cjs
+│ │ ├── .gitignore
+│ │ ├── package.json
+│ │ └── README.md
 Features
 
 User Authentication: Secure user registration and login functionality.
